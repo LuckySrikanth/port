@@ -1,0 +1,122 @@
+.intro-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 5px;
+    /* height: 100vh; */
+}
+.img {
+    height: 400px;
+    width: 420px;
+    border-radius: 50%;
+}
+.image-container {
+    padding: 2px;
+    margin-left: -55px;
+}
+.intro-content {
+    margin-left: 60px;
+    text-align: center;
+    /* font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+     */
+     font-family: "Poppins", sans-serif;
+}
+.helo {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+.my-name {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 35px;    
+
+}
+
+.role {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.dc-container {
+    margin: auto;
+}
+.contact-info-btn {
+    border-radius: 15px;
+    border: none;
+    width: 150px; 
+    height: 45px; 
+    background-color: black;
+    /* background: linear-gradient(90deg, #FF8C00, #FF4500); */
+    color: white;
+    margin: 5px; 
+    font-weight: 600;
+    font-size: 15px; 
+    transition: transform 0.2s;
+}
+.download-btn {
+    border-radius: 15px;
+    border: none;
+    width: 150px; /* Increase the width */
+    height: 45px; /* Increase the height */
+    padding: auto;
+    border: rgb(53, 53, 53) 0.1rem solid;    
+    margin: 10px; /* Increase the margin for spacing */
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.2s;
+}
+.contact-info-btn:hover,
+.download-btn:hover,
+.linkdn-an:hover,
+.linkdn-icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.linkdn-an {
+    margin: 8px;
+}
+.linkdn-icon {
+    height: fit-content;
+    width: 35px;
+    border-radius: 70px;
+    margin: 5px;
+    background-color:white  ;
+}
+
+
+    @media screen and (max-width: 840px) {
+        .intro-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .image-container {
+            filter: blur(8px);
+            -webkit-filter: blur(8px); /* Updated blur value */
+            position: relative; /* Add position relative */
+        }
+        .intro-content {
+            margin-left: -30px;
+            margin-top: 114px;
+            background: transparent; /* Add a semi-transparent white background */
+            padding: 20px; /* Add some padding to make content more readable */
+            position: absolute; /* Position it absolutely within .image-container */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Center it precisely */
+            z-index: 1; /* Place it above the blurred image */
+            color: #191970;
+        }
+        .helo {
+            color: #ffffff;
+        }
+        .role {
+            color: black;
+        }
+
+    }

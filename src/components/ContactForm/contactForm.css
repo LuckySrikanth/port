@@ -1,0 +1,81 @@
+* {
+    font-family: "Poppins",sans-serif; 
+}
+  
+  
+.background-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/dark-wall-empty-room-with-plants-floor-3d-rendering_41470-3847.jpg?w=900&t=st=1652729384~exp=1652729984~hmac=f2fa821523cd1b9f091bdb8f587687940d700352e6b73898377944b1b88a47ad);
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(1px); */
+  }
+  
+  .glass-blur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(114, 139, 144, 0.6);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    z-index: 1;
+    margin-left: 50px;
+    margin-top: 90px;
+  }
+  
+  .glass-blur label, .glass-blur input, .glass-blur textarea {
+    margin: 10px;
+    font-size: medium; 
+    font-weight: 600;
+    color: black;
+  }
+  
+  .glass-blur input, .glass-blur textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+  }
+
+  .contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .get-inTouch-text {
+    text-align: center;
+  }
+  .contact-form-text {
+    text-align: center;
+  }
+
+
+.glass-blur input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.224); /* Background color of the button */
+    color: white; /* Text color of the button */
+    font-size: medium;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect for the background color */
+  
+    /* Hover effect */
+    &:hover {
+      background: rgba(0, 0, 0, 0.8); /* Change background color on hover */
+    }
+  }
+  

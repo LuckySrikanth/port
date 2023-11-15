@@ -1,0 +1,35 @@
+/* navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 5rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.3); 
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    backdrop-filter: blur(10px); 
+  }
+  
+  .desktopMenu {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbarItems {
+    margin: 10px;
+    transition: all 0.3s; /* Add a smooth transition on hover */
+  }
+  
+  .navbarItems:hover {
+    cursor: pointer;
+    color: red;
+    border-bottom: 2px solid yellow;
+    transform: scale(1.1);
+  }
+  
