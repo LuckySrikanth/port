@@ -1,25 +1,21 @@
-import React from 'react'
-import "./project.css"
+import React from 'react';
+import "./project.css";
 
-const Project = () => {
+const Project = ({project}) => {
+  console.log(project);
   return (
     <div>
       <h1 className='project-text'>Projects</h1>
       <div className='projects-container'>
         <div className='project-card'>
-          <p>p1</p>
+          <img alt={project.image}/>
+          <h3>{project.title}</h3>
+          <p>{project.date}</p>
+          <p>Skills: {project.tags}</p>
+          <p>GitHub: <a href={project.github}>{project.title}</a> </p>
         </div>
-        <div className='project-card'>
-          <p>p2</p>
-        </div>
-        <div className='project-card'>
-          <p>p3</p>
-        </div>
-        <div className='project-card'>
-          <p>p4</p>
         </div>
       </div>
-    </div>
   )
 }
 

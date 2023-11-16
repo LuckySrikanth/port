@@ -1,4 +1,8 @@
-export default ProjetDetails = [
+import React from 'react'
+import Project from './project'
+ 
+ 
+ const  ProjetDetails = [
     {
         id: 0,
         title: "Youtube Clone",
@@ -12,3 +16,17 @@ export default ProjetDetails = [
         webapp: "https://whatsapp-clone-rishav.web.app",
     }
 ]
+
+const Details = () => {
+  return (
+    <div>
+      {
+        ProjetDetails.map(eachProject => (
+          <Project key={eachProject.id} project={eachProject} />
+        ))
+      }
+    </div>
+  )
+}
+
+export default Details
